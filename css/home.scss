@@ -1,0 +1,259 @@
+/***************************************************
+AUTOR: carmen Luyo
+PROYECTO: PORTAFOLIO
+DESCRIPCIÓN: HOJA DE ESTILOS PARA EL HOME PAGE
+****************************************************/
+@import 'style.scss';
+
+
+
+
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  max-width: none;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+/* img convertido a background img
+--------------------------------------- */   
+.fix-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  img {
+    @extend.img-cover;
+  }
+}
+
+.down-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+/*********** EMPIEZA HOME ****************/
+
+.home {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image:   url(../images/bg-banner.png);
+  .ctn-home {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 999;
+    padding: 0% 8%;
+    color: #fff;
+     h2 {
+      font-size: 40px;
+      font-family: "ACaslonPro-Regular";
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 100;
+      text-shadow: 2px 2px 8px #000000;
+    }
+    p {
+      font-size: 20px;
+      font-family: "ACaslonPro-Italic";
+      text-shadow: 2px 2px 8px #000000;
+    }
+    @media (min-width: 768px) {
+      h2 {
+        font-size: 120px;
+      }
+      p {
+        font-size: 30px;
+      }
+    }
+   
+  }
+}
+
+//
+
+.cerca-todo {
+  .container {
+    padding: 30px 0;
+    .title-cercaTodo {
+      font-family: "DINMedium";
+      text-transform: uppercase;
+      font-size: 65px;
+      span {
+        font-family: "DINBOLD";
+        color: #00ccff;
+        line-height: 30px;
+      }
+    }
+   .col-md-8 {
+      p {
+        font-family: "DINOT-Regular";
+        color: #000000;
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+
+// 
+
+.departamentos {
+  h2 {
+    text-align: center;
+    font-family: "DINMedium";
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 100;
+  }
+}
+
+//
+.ubicacion {
+  h2 {
+    font-family: "DINMedium";
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: 100;
+  }
+  p {
+    font-size: 20px;
+    font-family: "DINOT-Regular";
+  }
+  .accesos li {
+    font-size: 22px;
+  }
+  ul li {
+    font-family: "DINOT-Regular";
+    font-size: 18px;
+  }
+  h4 {
+    font-family: "DINBOLD";
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+//
+.reserva {
+    .container {
+      padding: 4% 10%;
+    text-align: center;
+    }
+    p {
+      color: #929496;
+      font-size: 20px;
+    }
+}
+.avance-obra {
+  h2 {
+    text-align: center;
+    font-family: "DINMedium";
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 100;
+  }
+}
+.grid-reserva {
+  .img-reserva {
+      padding: 0px;
+      max-height: 365px;
+    img {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}
+
+//
+.contac {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #3cb3e0;;
+
+}
+.modal-dialog {
+  top: 30%;
+  .modal-content {
+    background-color: #ececec;
+      .modal-body {
+        padding: 50px;
+        img {
+          width: 100%;
+        }
+      }
+  }
+}
+
+.title {
+  color:$colorweb;
+  font-size: 30px;
+  text-transform: uppercase;
+  @media (min-width: 320px) {
+    font-size: 30px;
+  }
+}
+
+///
+
+.departamentos {
+  .grid-departamentos {
+    img {
+      width: 100%;
+    }
+  }
+}
+///
+
+.ubicacion {
+  img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media screen and (max-width:769px) {
+
+
+}

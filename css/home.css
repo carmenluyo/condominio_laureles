@@ -1,0 +1,385 @@
+@charset "UTF-8";
+/***************************************************
+AUTOR: carmen Luyo
+PROYECTO: PORTAFOLIO
+DESCRIPCIÓN: HOJA DE ESTILOS PARA EL HOME PAGE
+****************************************************/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  *:focus {
+    outline: none; }
+
+html, body {
+  height: 100%;
+  min-height: 100%; }
+
+header {
+  *zoom: 1; }
+  header:before, header:after {
+    content: " ";
+    display: table; }
+  header:after {
+    clear: both; }
+
+@font-face {
+  font-family: "DINMedium";
+  src: url("../fonts/DINMedium.ttf"); }
+
+@font-face {
+  font-family: "ACaslonPro-Regular";
+  src: url("../fonts/ACaslonPro-Regular.otf"); }
+
+@font-face {
+  font-family: "ACaslonPro-Italic";
+  src: url("../fonts/ACaslonPro-Italic.otf"); }
+
+@font-face {
+  font-family: "DINBOLD";
+  src: url("../fonts/DINBOLD.ttf"); }
+
+@font-face {
+  font-family: "DINOT-Regular";
+  src: url("../fonts/DINOT-Regular.otf"); }
+
+/* INICIO DEL HEADER */
+header {
+  background-color: black;
+  -webkit-box-shadow: 0 0px;
+  box-shadow: 0 0px;
+  width: 100%;
+  z-index: 99999;
+  position: fixed;
+  padding: 10px 65px !important; }
+  header .left {
+    float: left; }
+    header .left .logo {
+      display: block; }
+  header .left, header .right {
+    line-height: 68px; }
+  header .right {
+    float: right; }
+    header .right nav ul {
+      margin-bottom: 0px; }
+      header .right nav ul li {
+        display: inline-block;
+        position: relative;
+        vertical-align: middle; }
+        header .right nav ul li a {
+          color: #fff;
+          font-size: 16px;
+          height: 73px;
+          line-height: 73px;
+          display: block;
+          padding: 0 10px;
+          text-transform: uppercase;
+          font-family: "DINMedium"; }
+  header .mobile-icon {
+    display: inline-block;
+    width: 35px;
+    cursor: pointer; }
+    header .mobile-icon i {
+      height: 3px;
+      width: 100%;
+      background: white;
+      display: block;
+      margin-bottom: 3px; }
+      header .mobile-icon i:last-child {
+        margin-bottom: 0px; }
+  header .menu-responsive {
+    width: 270px;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: -270px;
+    background: white;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.32);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.32);
+    z-index: 1002;
+    -webkit-transition: right 0.45s ease;
+    -moz-transition: right 0.45s ease;
+    -ms-transition: right 0.45s ease;
+    -o-transition: right 0.45s ease;
+    transition: right 0.45s ease; }
+    header .menu-responsive ul {
+      list-style-type: none;
+      padding: 0;
+      padding-top: 35px; }
+    header .menu-responsive .nav-logo {
+      text-align: center;
+      padding-top: 18%; }
+      header .menu-responsive .nav-logo img {
+        width: 180px;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        display: block;
+        padding-left: 20px; }
+    header .menu-responsive .close-nav {
+      position: absolute;
+      right: 50px;
+      float: right;
+      top: 64px;
+      cursor: pointer; }
+      header .menu-responsive .close-nav i {
+        width: 30px;
+        z-index: 999;
+        height: 3px;
+        position: absolute;
+        background-color: #3f3f3f; }
+        header .menu-responsive .close-nav i:nth-child(1) {
+          -ms-transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
+        header .menu-responsive .close-nav i:nth-child(2) {
+          -ms-transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+  header .active-menu {
+    right: 0; }
+
+.bnt-navPhone {
+  font-family: "DINBOLD" !important;
+  line-height: 40px !important;
+  height: 40px !important;
+  background-color: #00ccff;
+  border-radius: 5px; }
+
+/* FIN DEL HEADER */
+.r-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  z-index: 1001;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  cursor: pointer;
+  -webkit-transition: all 0.65s ease;
+  -moz-transition: all 0.65s ease;
+  -ms-transition: all 0.65s ease;
+  -o-transition: all 0.65s ease;
+  transition: all 0.65s ease;
+  opacity: 0;
+  filter: alpha(opacity=0); }
+
+.active-overlay {
+  visibility: visible;
+  opacity: 0.5;
+  filter: alpha(opacity=50); }
+
+.btn-menu {
+  display: none; }
+
+/* MOBILE HEADER*/
+@media screen and (max-width: 1024px) {
+  .btn-menu {
+    display: inline-block;
+    top: 30px;
+    position: relative; }
+  header .right > nav {
+    display: none; }
+  header .right > .menu-responsive {
+    display: block; }
+    header .right > .menu-responsive .nav-logo .logo {
+      font-size: 20px;
+      height: 73px;
+      line-height: 73px; }
+    header .right > .menu-responsive ul > li {
+      display: block;
+      text-align: center;
+      border-bottom: 1px solid gray; }
+      header .right > .menu-responsive ul > li a {
+        color: #3f3f3f; } }
+
+.container-fluid {
+  padding: 0px; }
+  .container-fluid .row {
+    margin: 0px; }
+    .container-fluid .row .img-reserva {
+      padding: 0px; }
+
+.img-cover, .fix-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  max-width: none;
+  min-height: 100%;
+  min-width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+  object-fit: cover; }
+
+/* img convertido a background img
+--------------------------------------- */
+.fix-img {
+  position: absolute;
+  height: 100%;
+  width: 100%; }
+
+.down-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite; }
+
+/*********** EMPIEZA HOME ****************/
+.home {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/bg-banner.png); }
+  .home .ctn-home {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 999;
+    padding: 0% 8%;
+    color: #fff; }
+    .home .ctn-home h2 {
+      font-size: 40px;
+      font-family: "ACaslonPro-Regular";
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 100;
+      text-shadow: 2px 2px 8px #000000; }
+    .home .ctn-home p {
+      font-size: 20px;
+      font-family: "ACaslonPro-Italic";
+      text-shadow: 2px 2px 8px #000000; }
+    @media (min-width: 768px) {
+      .home .ctn-home h2 {
+        font-size: 120px; }
+      .home .ctn-home p {
+        font-size: 30px; } }
+
+.cerca-todo .container {
+  padding: 30px 0; }
+  .cerca-todo .container .title-cercaTodo {
+    font-family: "DINMedium";
+    text-transform: uppercase;
+    font-size: 65px; }
+    .cerca-todo .container .title-cercaTodo span {
+      font-family: "DINBOLD";
+      color: #00ccff;
+      line-height: 30px; }
+  .cerca-todo .container .col-md-8 p {
+    font-family: "DINOT-Regular";
+    color: #000000;
+    font-size: 17px; }
+
+.departamentos h2 {
+  text-align: center;
+  font-family: "DINMedium";
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-weight: 100; }
+
+.ubicacion h2 {
+  font-family: "DINMedium";
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight: 100; }
+
+.ubicacion p {
+  font-size: 20px;
+  font-family: "DINOT-Regular"; }
+
+.ubicacion .accesos li {
+  font-size: 22px; }
+
+.ubicacion ul li {
+  font-family: "DINOT-Regular";
+  font-size: 18px; }
+
+.ubicacion h4 {
+  font-family: "DINBOLD";
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.reserva .container {
+  padding: 4% 10%;
+  text-align: center; }
+
+.reserva p {
+  color: #929496;
+  font-size: 20px; }
+
+.avance-obra h2 {
+  text-align: center;
+  font-family: "DINMedium";
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-weight: 100; }
+
+.grid-reserva .img-reserva {
+  padding: 0px;
+  max-height: 365px; }
+  .grid-reserva .img-reserva img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: block; }
+
+.contac {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #3cb3e0; }
+
+.modal-dialog {
+  top: 30%; }
+  .modal-dialog .modal-content {
+    background-color: #ececec; }
+    .modal-dialog .modal-content .modal-body {
+      padding: 50px; }
+      .modal-dialog .modal-content .modal-body img {
+        width: 100%; }
+
+.title {
+  color: #7db695;
+  font-size: 30px;
+  text-transform: uppercase; }
+  @media (min-width: 320px) {
+    .title {
+      font-size: 30px; } }
+
+.departamentos .grid-departamentos img {
+  width: 100%; }
+
+.ubicacion img {
+  width: 100%; }

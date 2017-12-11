@@ -207,9 +207,110 @@ DESCRIPCIÓN: HOJA DE ESTILOS PARA EL HOME PAGE
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #3cb3e0;;
+  background-color: #3cb3e0;
+  .info-top {
+    h2 {
+      color: #fff;
+      font-size: 45px; 
+      font-family: "DINBOLD";
+      text-transform: capitalize;
+    }
+    p a {
+      color: #fff;
+      font-size: 24px;
+      text-decoration: none;
+      font-family: "DINOT-Regular"; 
+    }
+  }
+  .wpcf7 {
+    margin-top: 20px; 
+    span input {
+      background: #ffffff;
+      padding: 7px;
+      color: #666666;
+      height: 48px;
+      font-size: 13px;
+      border: 1px solid transparent;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      -webkit-transition: border linear .2s,-webkit-box-shadow linear .2s;
+      transition: border linear .2s,-webkit-box-shadow linear .2s;
+      -o-transition: border linear .2s,box-shadow linear .2s;
+      transition: border linear .2s,box-shadow linear .2s;
+      transition: border linear .2s,box-shadow linear .2s,-webkit-box-shadow linear .2s;
+      border-radius: 10px;
+      width: 100%;
+      margin-bottom: 20px;
+      font-family: "DINMedium";
+      font-size: 18px; 
+    }
+    span textarea {
+      background: #ffffff;
+      padding: 7px;
+      color: #666666;
+      font-size: 13px;
+      border: 1px solid transparent;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      -webkit-transition: border linear .2s,-webkit-box-shadow linear .2s;
+      transition: border linear .2s,-webkit-box-shadow linear .2s;
+      -o-transition: border linear .2s,box-shadow linear .2s;
+      transition: border linear .2s,box-shadow linear .2s;
+      transition: border linear .2s,box-shadow linear .2s,-webkit-box-shadow linear .2s;
+      border-radius: 10px;
+      width: 100%;
+      margin-bottom: 20px;
+      font-family: "DINMedium";
+      font-size: 18px; 
+    }
+  }
+  .wpcf7-submit {
+      width: 200px;
+      text-align: left;
+      background-size: 80%;
+      display: block;
+      height: 55px;
+      line-height: 55px;
+      font-size: 23px;
+      color: #fff;
+      background-image: url(../images/button-form.png);
+      background-color: transparent;
+      background-repeat: no-repeat;
+      border: 0;
+      font-family: "DINBOLD";
+      padding-left: 30px;
+      text-transform: uppercase; 
 
+    }
 }
+
+@media (max-width: 768px) {
+  .contac {
+    padding: 0 30px; 
+    .wpcf7 {
+      span textarea {
+        height: 100px; 
+      }
+      span input {
+       height: 38px; 
+      }
+      .wpcf7-submit {
+        width: 100px;
+        font-size: 18px;
+        background-size: 100%;
+        padding-left: 11px;
+        height: 48px;
+        line-height: 1.5 !important; 
+      }
+    }
+    .info-top p a {
+      padding: 68px 0 0;
+    } 
+  }
+}
+
+
+
 .modal-dialog {
   top: 30%;
   .modal-content {

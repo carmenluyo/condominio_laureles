@@ -85,6 +85,10 @@ header {
     float: left;
     .logo {
       display:block;
+      img {
+        width: 60%;
+        margin-top: 5px;
+      }
     }
   }
   .left, .right{
@@ -188,7 +192,6 @@ header {
 }
 
 .bnt-navPhone {
-  font-family: "DINBOLD" !important;
   line-height: 40px !important;
   height: 40px !important;
   background-color: #00ccff;

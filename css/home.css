@@ -55,6 +55,9 @@ header {
     float: left; }
     header .left .logo {
       display: block; }
+      header .left .logo img {
+        width: 60%;
+        margin-top: 5px; }
   header .left, header .right {
     line-height: 68px; }
   header .right {
@@ -140,7 +143,6 @@ header {
     right: 0; }
 
 .bnt-navPhone {
-  font-family: "DINBOLD" !important;
   line-height: 40px !important;
   height: 40px !important;
   background-color: #00ccff;
@@ -463,5 +465,9 @@ header {
 .departamentos .grid-departamentos img {
   width: 100%; }
 
-.ubicacion img {
-  width: 100%; }
+.ubicacion {
+  margin-top: 6%; }
+  .ubicacion img {
+    width: 100%; }
+  .ubicacion .accesos li i {
+    margin-right: 15px; }

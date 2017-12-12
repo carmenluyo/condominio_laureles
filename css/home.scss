@@ -345,8 +345,14 @@ DESCRIPCIÓN: HOJA DE ESTILOS PARA EL HOME PAGE
 ///
 
 .ubicacion {
+  margin-top: 6%;
   img {
     width: 100%;
+  }
+  .accesos {
+    li i {
+      margin-right: 15px;
+    }
   }
 }
 

@@ -35,8 +35,8 @@ header {
   src: url("../fonts/ACaslonPro-Italic.otf"); }
 
 @font-face {
-  font-family: "DINBOLD";
-  src: url("../fonts/DINBOLD.ttf"); }
+  font-family: "dinbold";
+  src: url("../fonts/dinbold.otf"); }
 
 @font-face {
   font-family: "DINOT-Regular";
@@ -289,7 +289,7 @@ header {
     text-transform: uppercase;
     font-size: 65px; }
     .cerca-todo .container .title-cercaTodo span {
-      font-family: "DINBOLD";
+      font-family: "dinbold";
       color: #00ccff;
       line-height: 30px; }
   .cerca-todo .container .col-md-8 p {
@@ -325,7 +325,7 @@ header {
   font-size: 18px; }
 
 .ubicacion h4 {
-  font-family: "DINBOLD";
+  font-family: "dinbold";
   font-size: 20px;
   margin-top: 20px;
   margin-bottom: 20px; }
@@ -365,7 +365,7 @@ header {
   .contac .info-top h2 {
     color: #fff;
     font-size: 45px;
-    font-family: "DINBOLD";
+    font-family: "dinbold";
     text-transform: capitalize; }
   .contac .info-top p a {
     color: #fff;
@@ -424,7 +424,7 @@ header {
     background-color: transparent;
     background-repeat: no-repeat;
     border: 0;
-    font-family: "DINBOLD";
+    font-family: "dinbold";
     padding-left: 30px;
     text-transform: uppercase; }
 

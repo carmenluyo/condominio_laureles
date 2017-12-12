@@ -356,6 +356,23 @@ DESCRIPCIÓN: HOJA DE ESTILOS PARA EL HOME PAGE
   }
 }
 
+
+//Modals
+
+.modal-body {
+      font-family: "DINMedium";
+  h3  {
+    text-align: center;
+    font-size: 20px;
+    font-family: "dinbold";
+    margin-top: 20px;
+  }
+  h4 {
+    text-align: center;
+    font-size: 25px;
+    font-family: "dinbold";
+  }
+}
 @media only screen and (min-width: 768px) {
 
 }

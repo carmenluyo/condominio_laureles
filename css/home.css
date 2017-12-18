@@ -483,3 +483,9 @@ header {
     text-align: center;
     font-size: 25px;
     font-family: "dinbold"; }
+
+.iconsUb {
+  width: 20px !important;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 3px; }

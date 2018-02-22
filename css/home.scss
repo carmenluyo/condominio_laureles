@@ -340,6 +340,15 @@ DESCRIPCIÓN: HOJA DE ESTILOS PARA EL HOME PAGE
     img {
       width: 100%;
     }
+    .tilte-dep{
+      text-align: center;
+      font-family: "DINMedium";
+      text-transform: uppercase;
+      font-size: 20px;
+      margin-top: 4px;
+      margin-bottom: 40px;
+      font-weight: 100;
+    }
   }
 }
 ///
@@ -389,3 +398,11 @@ DESCRIPCIÓN: HOJA DE ESTILOS PARA EL HOME PAGE
   vertical-align: middle;
   margin-right: 3px;
 }
+
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 60% !important;
+  }
+}
+
